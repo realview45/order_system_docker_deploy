@@ -11,6 +11,7 @@ COPY settings.gradle .
 RUN chmod +x gradlew
 RUN ./gradlew bootJar
 
+
 # 두번째스테이지(컨테이너) : 이미지 경량화를 위해 스테이지 분리작업진행
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
